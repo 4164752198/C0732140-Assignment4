@@ -23,8 +23,11 @@ namespace Assignment_4
 
         public void Run()
         {
+
             this.ReadTextFiles();
             this.ProcessArrayList();
+
+
         }
 
         public void ProcessArrayList()
@@ -44,7 +47,7 @@ namespace Assignment_4
 
         public bool ContainsWord(string line, string word)
         {
-            //TODO: write are algorithm to detect if a line contains a word
+           
             if (line.Contains("sea") == true)
             {
 
@@ -54,7 +57,7 @@ namespace Assignment_4
 
         public void ReadTextFiles()
         {
-            //Read file using StreamReader. Reads file line by line
+            
             using (StreamReader file = new StreamReader("U:/Users/732140/Beowulf.txt"))
             {
                 //int words = 1;
@@ -71,13 +74,11 @@ namespace Assignment_4
                 
                 file.Close();
                 Console.WriteLine($"File has {counter} lines.");
-               // Console.WriteLine("Number of words in the string: {0}", words);  
+               
                 Console.WriteLine();
             }
 
         }
-
-
 
         public int FindNumberOfBlankSpaces(string line)
         {
