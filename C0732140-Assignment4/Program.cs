@@ -47,11 +47,12 @@ namespace Assignment_4
 
         public bool ContainsWord(string line, string word)
         {
-           
+
             if (line.Contains("sea") == true)
             {
-            
+                return true;
             }
+
             return false;
         }
 
